@@ -30,20 +30,20 @@ The ```goal``` is to capture more seeds in your Kalah than your opponent.
 
 
 ## Heuristics Implemented in our player (called Segfault):
-- **Clear the rightmost pit:** A heuristic that always tries to empty the rightmost pit on the player's side.
-- **Prioritize captures:** A heuristic that prioritizes moves that lead to the capture of the most seeds by the player.
-- **Avoid steals:** A heuristic that prioritizes moves that minimize the chances of the opponent stealing seeds.
-- **Difference in Kalahs:** A heuristic that maximizes the difference in the number of seeds in the Kalahs.
-- **Play again:** A heuristic that prioritizes states where it is the player's turn to play again.
-- **Move that allows playing again:** A heuristic that prioritizes moves that lead to a state where the player has a move that allows them to play again.
-- **Avoid moves that allow the opponent to play again:** A heuristic that prioritizes moves that avoid states where the opponent has a move that allows them to play again.
-- **Save to the left:** A heuristic that tries to keep seeds in the leftmost pit on the player's side.
+- **_Clear the rightmost pit:_** A heuristic that always tries to empty the rightmost pit on the player's side.
+- **_Prioritize captures:_** A heuristic that prioritizes moves that lead to the capture of the most seeds by the player.
+- **_Avoid steals:_** A heuristic that prioritizes moves that minimize the chances of the opponent stealing seeds.
+- **_Difference in Kalahs:_** A heuristic that maximizes the difference in the number of seeds in the Kalahs.
+- **_Play again:_** A heuristic that prioritizes states where it is the player's turn to play again.
+- **_Move that allows playing again:_** A heuristic that prioritizes moves that lead to a state where the player has a move that allows them to play again.
+- **_Avoid moves that allow the opponent to play again:_** A heuristic that prioritizes moves that avoid states where the opponent has a move that allows them to play again.
+- **_Save to the left:_** A heuristic that tries to keep seeds in the leftmost pit on the player's side.
 
 **Note:** For optimization of the heuritics values we used a ```genetic algorithm``` (```genetics.py```).
 
 ## Bots/players for test:
-- **El Caos Inteligente:** Focuses on terminal states with a simple scoring system (+100 for win, -100 for loss, 0 for draw).
-- **Chapiteu:** Aims to maximize the seed difference between players while also scoring terminal states (+100/-100/0).
+- **_El Caos Inteligente:_** Focuses on terminal states with a simple scoring system (+100 for win, -100 for loss, 0 for draw).
+- **_Chapiteu:_** Aims to maximize the seed difference between players while also scoring terminal states (+100/-100/0).
 
 
 ## How to Run
